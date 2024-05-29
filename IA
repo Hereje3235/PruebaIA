@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+
+# Datos
+datos = [10, 15, 20, 25, 30]  # Datos entre el límite superior y el límite inferior
+limite_superior = 35
+limite_inferior = 5
+meta = 25
+
+# Crear el gráfico
+plt.plot(datos, label='Datos')
+plt.axhline(y=limite_superior, color='r', linestyle='--', label='Límite Superior')
+plt.axhline(y=limite_inferior, color='g', linestyle='--', label='Límite Inferior')
+plt.axhline(y=meta, color='b', linestyle='--', label='Meta')
+
+# Personalizar el gráfico
+plt.xlabel('Tiempo')
+plt.ylabel('Valor')
+plt.title('Gráfico con límites y meta')
+plt.legend()
+
+# Mostrar el gráfico
+plt.grid(True)
+plt.show()
